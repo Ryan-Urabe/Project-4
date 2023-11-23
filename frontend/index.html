@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Machine Learning</title>
+  </head>
+  <body>
+    <!-- <button onclick="send(data)">click me</button> -->
+
+    <div class="container">
+      <div id="overlay" class="overlay">
+        <div id="modal" class="modal">
+          <div id="meetyou" class="sub-modal">
+            <div class="meet">
+              <h1>Hi, can I meet you?</h1>
+            </div>
+            <div class="name">
+              <label id="" for="input2">Please enter your name:</label>
+              <input type="text" id="name" required />
+            </div>
+            <div id="continue">
+              <button onclick="saveName()">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="mainPage" class="mainPage hidden">
+        <div class="explorer">
+          <div class="exp-main">
+            <h1>Explorer Genre</h1>
+            <p>
+              The list below are the available Genre of music you can explore
+              click to get more details.
+            </p>
+          </div>
+          <div class="exp-list">
+            <h1>Genre List</h1>
+            <ul class="explorer-menu">
+              <li><span onclick="whichChart('EDM')">Edm</span></li>
+              <li><span onclick="whichChart('LATIN')">Latin</span></li>
+              <li><span onclick="whichChart('POP')">Pop</span></li>
+              <li><span onclick="whichChart('R&B')">R&B</span></li>
+              <li><span onclick="whichChart('RAP')">Rap</span></li>
+              <li><span onclick="whichChart('ROCK')">Rock</span></li>
+            </ul>
+          </div>
+        </div>
+        <div id="form-page" class="main-section">
+          <div id="text-div">
+            <div>
+              <h1>You are alomost there!</h1>
+              <h2>Fill the form to make prediction</h2>
+            </div>
+          </div>
+
+          
+
+          <div id="user-info-div" class="user-info-div">
+            <div class="inputfield">
+              <label for="input1" class="long">danceability:</label>
+              <input type="number" id="input1" required />
+
+              <label for="input2" class="long">energy:</label>
+              <input type="number" id="input2" required />
+
+              <label for="input3">key:</label>
+              <input type="number" id="input3" required />
+
+              <label for="input4">loudness:</label>
+              <input type="number" id="input4" required />
+
+              <label for="input5">mode:</label>
+              <input type="number" id="input5" required />
+            </div>
+            <div class="inputfield">
+              <label for="input6">speechiness:</label>
+              <input type="number" id="input6" required />
+
+              <label for="input7">acousticness:</label>
+              <input type="number" id="input7" required />
+
+              <label for="input8">instrumentalness:</label>
+              <input type="number" id="input8" required />
+
+              <label for="input9">liveness:</label>
+              <input type="number" id="input9" required />
+            </div>
+            <div class="inputfield">
+              <label for="input10">valence:</label>
+              <input type="number" id="input10" required />
+
+              <label for="input11">tempo:</label>
+              <input type="number" id="input11" required />
+
+              <label for="input12">duration_ms:</label>
+              <input type="number" id="input12" required />
+
+              <select id="selDataset">
+                <option value="edm">Edm</option>
+                <option value="latin">Latin</option>
+                <option value="pop">Pop</option>
+                <option value="r&b">R&B</option>
+                <option value="rap">Rap</option>
+                <option value="rock">Rock</option>
+              </select>
+            </div>
+          </div>
+          <div id="predict" class="predict">
+            <button>Predict</button>
+          </div>
+        </div>
+        <div id="chart-display" class="main-section hidden"></div>
+      </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="logic.js"></script>
+  </body>
+</html>

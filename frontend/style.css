@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.pointer {
+  cursor: pointer;
+  color: #02272b;
+}
+
+.container {
+  font-family: "Manrope", sans-serif;
+  color: var(--color-light--2);
+  font-weight: 400;
+  line-height: 1.6;
+  height: 100vh;
+  overscroll-behavior-y: none;
+  background-color: #fff;
+  /* padding: 2.5rem; */
+  display: flex;
+  margin: auto;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 5000;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  width: 40%;
+  height: 60%;
+  background-color: white;
+}
+
+.sub-modal {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.meet {
+  display: flex;
+  height: 30%;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  height: 30%;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  font-size: larger;
+  color: black;
+}
+
+#continue {
+  height: 40%;
+  margin: auto;
+  margin-top: 0;
+}
+
+.disclaimer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-top: 100px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.mainPage {
+  display: flex;
+  /* flex-direction: column; */
+  height: 100vh;
+  width: 100%;
+  /* margin-top: 10px; */
+}
+
+.explorer {
+  flex: 3; /* 20% of the width */
+  background-color: rgb(219, 244, 201);
+  color: #565657;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the screen */
+  border-right: 2px solid;
+  border-color: #e9f5ae;
+}
+
+.exp-main {
+  flex: 1; /* 20% of the explorer section */
+  border-bottom: 2px solid #e9f5ae; /* Solid border between exp-main and exp-list */
+  padding-bottom: 10px;
+  text-align: left; /* Align text to the left */
+}
+
+.exp-list {
+  flex: 4; /* 80% of the explorer section */
+  padding-top: 10px;
+  text-align: left; /* Align text to the left */
+  overflow-y: auto; /* Add vertical scrollbar if content exceeds the height */
+}
+
+.explorer-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.explorer-menu li {
+  margin-bottom: 10px;
+}
+
+.explorer-menu span {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.explorer-menu span:hover {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  padding-left: 20px;
+}
+
+#text-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  height: 20%;
+  border-bottom: 2px solid rgb(219, 217, 217);
+}
+
+.user-info-div {
+  display: flex;
+  /* flex-wrap: wrap; */
+  height: 60%;
+  justify-content: space-around;
+  margin-top: 20px;
+  /* border-top: 2px solid; */
+  /* background-color: aqua; */
+}
+
+.user-info-div img {
+  height: 100%;
+  width: 100%;
+}
+
+.inputfield {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.predict {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  /* margin-right: 300px; */
+}
+
+button {
+  height: 50px;
+  width: auto;
+  padding: 15px;
+  background-color: rgb(219, 244, 201);
+  border: none;
+  border-radius: 20px;
+  font-size: large;
+  color: #000000;
+}
+
+p {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 300;
+}
